@@ -6,6 +6,7 @@ from typing import List, Optional, Union
 
 
 class UnitTests(unittest.TestCase):
+
     @parameterized.expand([
         param(name="test_two_problems_arrangement1",
               args=[['3801 - 2', '123 + 49']],
@@ -59,7 +60,8 @@ class UnitTests(unittest.TestCase):
               msg='Expected solutions to be correctly displayed in output when calling "arithmetic_arranger()" with '
                   'five arithmetic problems and a second argument of `True`.')
     ])
-    def test_arithmetic_formatter(self, name: str, args: List[Union[List[str], Optional[bool]]], expected: str, msg: str):
+    def test_arithmetic_formatter(self, name: str, args: List[Union[List[str], Optional[bool]]], expected: str,
+                                  msg: str):
         actual: str = formatter(*args)
         self.assertEqual(actual, expected, msg)
 

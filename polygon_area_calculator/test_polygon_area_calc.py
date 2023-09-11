@@ -1,6 +1,6 @@
 import unittest
 
-from calculator import Rectangle, Square
+from polygon_area_calculator.calculator import Rectangle, Square
 
 
 class UnitTests(unittest.TestCase):
