@@ -1,6 +1,6 @@
 import unittest
 
-from calculator import Hat, experiment
+from probability_calculator.calculator import Hat, experiment
 
 
 class UnitTests(unittest.TestCase):

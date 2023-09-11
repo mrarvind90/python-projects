@@ -1,6 +1,6 @@
 import unittest
 
-from budget import Category, create_spend_chart
+from budget_app.budget import Category, create_spend_chart
 
 
 class UnitTests(unittest.TestCase):
