@@ -1,4 +1,4 @@
-# Scientific Computing with Python - freeCodeCamp
+# Scientific Computing with Python
 
 ## About the Projects
 This repository contains my solutions to the projects in "Scientific Computing with Python" course from freeCodeCamp.
