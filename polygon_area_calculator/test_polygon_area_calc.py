@@ -6,6 +6,11 @@ from polygon_area_calculator.calculator import Rectangle, Square
 class UnitTests(unittest.TestCase):
     maxDiff = None
 
+    @classmethod
+    def setUpClass(cls) -> None:
+        test_name = "Polygon Area Tests"
+        print(f"\n{test_name}\n{'=' * len(test_name)}")
+
     def setUp(self):
         self.rect = Rectangle(3, 6)
         self.sq = Square(5)

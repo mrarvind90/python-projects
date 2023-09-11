@@ -6,6 +6,11 @@ from budget_app.budget import Category, create_spend_chart
 class UnitTests(unittest.TestCase):
     maxDiff = None
 
+    @classmethod
+    def setUpClass(cls) -> None:
+        test_name = "Budget App Tests"
+        print(f"\n{test_name}\n{'=' * len(test_name)}")
+
     def setUp(self):
         self.food = Category("Food")
         self.entertainment = Category("Entertainment")

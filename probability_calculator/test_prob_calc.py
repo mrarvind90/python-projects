@@ -6,6 +6,11 @@ from probability_calculator.calculator import Hat, experiment
 class UnitTests(unittest.TestCase):
     maxDiff = None
 
+    @classmethod
+    def setUpClass(cls) -> None:
+        test_name = "Probability Calculator Tests"
+        print(f"\n{test_name}\n{'=' * len(test_name)}")
+
     def test_hat_class_contents(self):
         hat = Hat(red=3, blue=2)
         actual = hat.contents

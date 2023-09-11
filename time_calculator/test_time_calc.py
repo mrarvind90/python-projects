@@ -6,6 +6,11 @@ from time_calculator.calculator import add_time
 class UnitTests(unittest.TestCase):
     maxDiff = None
 
+    @classmethod
+    def setUpClass(cls) -> None:
+        test_name = "Time Calculator Tests"
+        print(f"\n{test_name}\n{'=' * len(test_name)}")
+
     def test_same_period(self):
         actual = add_time("3:30 PM", "2:12")
         expected = "5:42 PM"
